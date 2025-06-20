@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Standard Batteries Delivery Area Extended</name>
+
+    <!-- Style για παλιό όριο (μπλε) -->
+    <Style id="old-area">
+      <LineStyle><color>ff0051e6</color><width>3</width></LineStyle>
+      <PolyStyle><color>6e0051e6</color><fill>1</fill><outline>1</outline></PolyStyle>
+    </Style>
+
+    <!-- Style για νέο όριο (πράσινο) -->
+    <Style id="new-area">
+      <LineStyle><color>ff00e651</color><width>3</width></LineStyle>
+      <PolyStyle><color>6e00e651</color><fill>1</fill><outline>1</outline></PolyStyle>
+    </Style>
+
+    <Folder>
+      <name>Delivery Areas</name>
+
+      <!-- Παλιό όριο -->
+      <Placemark>
+        <name>Existing Area</name>
+        <styleUrl>#old-area</styleUrl>
+        <Polygon>
+          <outerBoundaryIs><LinearRing><coordinates>
+            23.0487753,40.6788835,0
+            23.0446555,40.685132,0
+            23.046429,40.6810189,0
+            23.0487753,40.6788835,0
+          </coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+
+      <!-- Νέο, διευρυμένο όριο -->
+      <Placemark>
+        <name>Extended Area</name>
+        <styleUrl>#new-area</styleUrl>
+        <Polygon>
+          <outerBoundaryIs><LinearRing><coordinates>
+            23.046429,40.6810189,0
+            23.0384756,40.6882561,0
+            23.0281759,40.7080382,0
+            23.0106704,40.7207877,0
+            23.0144431,40.7834689,0
+            22.960198,40.8224512,0
+            22.9365083,40.8445339,0
+            22.8977133,40.8660842,0
+            22.8640677,40.8328426,0
+            22.853768,40.8110188,0
+            22.8369417,40.787886,0
+            22.799523,40.7715097,0
+            22.6944662,40.757468,0
+            22.62819,40.7525366,0
+            22.5681234,40.7444637,0
+            22.5990243,40.7187013,0
+            22.6632229,40.6912452,0
+            22.6754113,40.676472,0
+            22.6834798,40.6648222,0
+            22.6886284,40.6531016,0
+            22.6882868,40.6465888,0
+            22.6978994,40.640338,0
+            22.7075125,40.6241839,0
+            23.0968404,40.6236628,0
+            23.0975272,40.6184509,0
+            23.0968404,40.6236628,0
+            23.0563284,40.6580508,0
+            23.046429,40.6810189,0
+          </coordinates></LinearRing></outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+
+    </Folder>
+  </Document>
+</kml>
