@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Extended Delivery Area</name>
+
+    <Style id="poly-style-blue-normal">
+      <LineStyle>
+        <color>ffff0000</color> <!-- Μπλε (AABBGGRR format) -->
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>660000ff</color> <!-- Ημιδιαφανές μπλε -->
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+
+    <Placemark>
+      <name>Extended Delivery Area</name>
+      <styleUrl>#poly-style-blue-normal</styleUrl>
+      <MultiGeometry>
+        <!-- Εδώ βάζεις τις συντεταγμένες για το νέο όριο -->
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                <!-- Αντέγραψε εδώ τις συντεταγμένες του νέου ορίου -->
+                23.1,40.7,0
+                23.15,40.72,0
+                23.18,40.7,0
+                23.12,40.68,0
+                23.1,40.7,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+
+  </Document>
+</kml>
